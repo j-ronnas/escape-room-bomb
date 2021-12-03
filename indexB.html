@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BOMB DEFUSAL</h1>
+    <h1 id="room-code">B</h1>
+
+    <div class="main-code-entry">
+        <input type="text" id="main-code-input">
+        <button class="button-30" onclick="EnterCode()">Submit-Code</button>
+    </div>
+
+    <div class="code-entry" id="bomb-defuse">
+        <input type="text" id="bomb-code-input">
+        <button class="button-30" onclick="DefuseBomb()">Enter</button>
+        <button class="button-30" onclick="Back()">Back</button>
+    </div>
+
+    <div class="display-lock-code">
+        <h1 id="lock-code"></h1>
+        <button class="button-30" onclick="Back()">Back</button>
+    </div>
+
+    <div class="animal-sounds">
+        <h1>Lyssna noga</h1>
+        <audio controls>
+            <source src="animal_sounds.mp3" type="audio/mpeg">
+        </audio>
+        <button class="button-30" onclick="Back()">Back</button>
+    </div>
+
+    <div class="success">
+        <h1 class="success-text">BOMB DISARMERAD</h1>
+        <button class="button-30" onclick="Back()">Back</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
